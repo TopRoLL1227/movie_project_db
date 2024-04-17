@@ -1,0 +1,10 @@
+{% extends 'movie_app/base.html'%}
+
+{% block content %}
+    <h2> Lists filmmakers </h2>
+    <ul>
+    {% for director in directors %}
+        <li>{{ director.first_name }} {{ director.last_name}} </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

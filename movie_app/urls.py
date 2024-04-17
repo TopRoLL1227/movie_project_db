@@ -8,5 +8,6 @@ admin.site.index_title = 'Супер адмінка'
 
 urlpatterns = [
     path("", views.show_all_movie),
+    path("directors/", views.show_directors),
     path("movie/<slug:slug_movie>", views.show_one_movie, name='movie_detail'),
 ]
